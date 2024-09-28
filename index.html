@@ -7,6 +7,23 @@
 <body style="background-color : antiquewhite">
 
   <style>
+      #Change {
+          font-size : 90px
+      }
+      #Logo{
+          width : 1400px; 
+          height : 700px;
+      }
+      #Developer {
+          color: red;
+          font-size: 100px;
+      }
+      #Projects {
+          font-size: 80px;
+      }
+      #Projectnames {
+          font-size: 50px;
+      }
       ul {
           color: red;
           font-size: 30px;
@@ -17,6 +34,18 @@
       li {
           margin-right: 30px;
           
+      }
+      #Image1 {
+          width: 500px;
+          height: 500px;
+      }
+      #Image2 {
+          width: 500px;
+          height: 500px;
+      }
+      #Image3 {
+          width: 500px;
+          height: 500px;
       }
       #Imagetest {
           width: 500px;
@@ -33,37 +62,111 @@
           height: 500px;
          
       }
-      
-      #End{
+      #Skills {
+          font-size: 50px;
+      }
+      #list {
+          font-size: 30px;
+      }
+
+      #End {
           margin: 0;
+          font-size: 50px;
+      }
+      @media only screen and (max-width: 400px){
+          #Change{
+              font-size : 25px;
+          }
+          #Logo {
+              width: 400px;
+              height: 200px;
+          }
+          #Developer{
+              font-size: 30px;
+          }
+          #Projects {
+              font-size: 30px;
+          }
+          #Projectnames {
+              font-size: 25px;
+          }
+          #Image1 {
+              width: 300px;
+              height: 300px;
+          }
+
+          #Image2 {
+              width: 300px;
+              height: 300px;
+          }
+
+          #Image3 {
+              width: 300px;
+              height: 300px;
+          }
+
+          #Imagetest {
+              width: 300px;
+              height: 300px;
+          }
+
+          #Imagetest2 {
+              width: 300px;
+              height: 300px;
+          }
+
+          #Imagetest3 {
+              width: 300px;
+              height: 300px;
+          }
+          #Skills {
+              font-size: 30px;
+          }
+          ul {
+              color: red;
+              font-size: 15px;
+              margin: 5px;
+              padding: 15px;
+              display: block;
+          }
+          li {
+              margin-right: 30px;
+          }
+          #list {
+              font-size: 8px
+          }
+          #End {
+              margin: 0;
+              font-size: 30px;
+          }
       }
      
      
   </style>
   <header>
       <nav>
-          <h1 id="Change" style="font-size : 90px">Tshiamo</h1>
-          <img src="T.KING 2.png" width="1400" height="700" />
+          <h1 id="Change">Tshiamo</h1>
+          <img id="Logo" src="T.KING 2.png" />
           <div id="Color" style="text-align: center; background-color : black">
-              <h1 style="color: red; font-size : 100px">Game/Application Developer <br /> Animator <br /> Designer</h1>
+              <h1 id="Developer">Game/Application Developer <br /> Animator <br /> Designer</h1>
 
           </div>
           <br />
-          <h1 style="color: black; font-size : 80px; text-align:center;"><u>Projects</u></h1>
+          <h1 id ="Projects" style="color: black; text-align:center;"><u>Projects</u></h1>
           <div style="text-align:center">
-              <h1 style="color: red; font-size: 50px; text-align: center;">2D/3D Pictures</h1>
-              <a href="2D&3D Pictures.html"><img id="Image1" src="2D AND 3D images/2D PORTRAIT.png" width="500" height="500" /></a> <br /><br /><br />
+              <h1 id="Projectnames" style="color: red; text-align: center;">2D/3D Pictures</h1>
+              <a href="2D&3D Pictures.html"><img id="Image1" src="2D AND 3D images/2D PORTRAIT.png" /></a> <br /><br /><br />
 
-              <h1 style="color: red; font-size: 50px; text-align: center;">2D/3D Videos</h1>
-              <a href="2D&3D Videos.html"><img id="Image2" src="2D AND 3D videos/MR. H PROFILE.png" width="500" height="500" /></a><br /><br /><br />
+              <h1 id="Projectnames" style="color: red; text-align: center;">2D/3D Videos</h1>
+              <a href="2D&3D Videos.html"><img id="Image2" src="2D AND 3D videos/MR. H PROFILE.png"  /></a><br /><br /><br />
 
-              <h1 style="color: red; font-size: 50px; text-align: center;">Mobile Games & Applications</h1>
-              <a href="Mobile 2D&3D Games & Apps.html"><img id="Image3" src="MY MOBILE GAMES AND APPS/the_logo.png" width="500" height="500" /></a><br /><br /><br />
+              <h1 id="Projectnames" style="color: red; text-align: center;">Mobile Games & Applications</h1>
+              <a href="Mobile 2D&3D Games & Apps.html"><img id="Image3" src="MY MOBILE GAMES AND APPS/the_logo.png" /></a><br /><br /><br />
 
           </div>
-          <h1 style="color: black; text-align:center; font-size: 50px;"><u>Skills</u></h1>
+          <h1 id ="Skills" style="color: black; text-align:center;"><u>Skills</u></h1>
           <div style="background-color: black;">
-              <p style="color: red; font-size : 30px">
+              <p id="list" style="color: red;">
                   <ul>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <li>Creativity</li>&nbsp;&nbsp;&nbsp;
@@ -90,9 +193,9 @@
               </p>
 
           </div>
-          <h1 style="color: black; text-align: center; font-size: 50px;">Programming Languages</h1>
+          <h1 id ="Skills" style="color: black; text-align: center;">Programming Languages</h1>
           <div style="background-color: black;">
-              <p style="color: red; font-size : 30px">
+              <p id="list" style="color: red;">
                   <ul>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <li>C#</li>&nbsp;&nbsp;&nbsp;
@@ -101,9 +204,9 @@
                   </ul>
               </p>
           </div>
-          <h1 style="color: black; text-align: center; font-size: 50px;">Web Development</h1>
+          <h1 id ="Skills" style="color: black; text-align: center;">Web Development</h1>
           <div style="background-color: black;">
-              <p style="color: red; font-size : 30px">
+              <p id="list" style="color: red;">
                   <ul>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <li>HTML</li>&nbsp;&nbsp;&nbsp;
@@ -112,9 +215,9 @@
                   </ul>
               </p>
           </div>
-          <h1 style="color: black; text-align:center; font-size: 50px;">Database</h1>
+          <h1 id ="Skills" style="color: black; text-align:center;">Database</h1>
           <div style="background-color: black;">
-              <p style="color: red; font-size : 30px">
+              <p id="list" style="color: red; ">
                   <ul>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <li>SQL</li>&nbsp;&nbsp;&nbsp;
@@ -127,7 +230,7 @@
           <br />
           <br />
           <br />
-          <h1 id="End" style="color: black; text-align:center; font-size: 50px;">Contact Details</h1>
+          <h1 id="End" style="color: black; text-align:center; "><u>Contact Details</u></h1>
           <div style="background-color: black;">
               <p style="color: red; font-size: 20px;">Email: tshiamomagabe@gmail.com</p>
               <p style="color: red; font-size: 20px;">Phone: (+27) 722 046 337</p>

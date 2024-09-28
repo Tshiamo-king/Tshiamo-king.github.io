@@ -15,7 +15,7 @@
         button {
             color: blue;
             width: 200px;
-            height: 50px;
+            height: 70px;
             font-size: 50px;
         }
         #Change:hover {
@@ -26,12 +26,47 @@
             font-size: 50px;
             
         }
+        #Video {
+            width : 1000px;
+            height: 600px;
+        }
+        #Background {
+        }
+
+        @media only screen and (max-width: 400px){
+            h1 {
+                color: black;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            button {
+                color: blue;
+                width: 200px;
+                height: 70px;
+                font-size: 50px;
+            }
+
+            #Change:hover {
+                background-color: yellow;
+            }
+
+            #Title {
+                color: black;
+                font-size: 30px;
+            }
+            #Background {
+                width: 1000px;
+                height: 600px;
+            }
+        }
+
     </style>
     <h1><u> 2D&3D Videos </u></h1>
     <a href="index.html" style="font-size: 40px;">Home</a>
-    <div style="text-align:center;background-color:blanchedalmond">
+    <div id="Background" style="text-align:center;background-color:blanchedalmond">
         <p id="Title">1st Video</p>
-        <video id="Video" src="2D AND 3D videos/2D Animation.mp4" width="1000" height="600" autoplay controls></video>
+        <video id="Video" src="2D AND 3D videos/2D Animation.mp4" autoplay controls></video>
         <br />
         <button id="Change" onclick="NextVideo();">></button>
     </div>

@@ -15,7 +15,7 @@
         button {
             color: blue;
             width: 200px;
-            height: 50px;
+            height: 70px;
             font-size: 50px;
         }
         #Change:hover{
@@ -25,12 +25,46 @@
             color: black;
             font-size: 50px;
         }
+        #Background {
+
+        }
+        
+        
+        @media only screen and (max-width: 400px){
+            h1 {
+                color: black;
+                font-size: 50px;
+                text-align: center;
+            }
+            button {
+                color: blue;
+                width: 200px;
+                height: 70px;
+                font-size: 50px;
+            }
+
+            #Change:hover {
+                background-color: yellow;
+            }
+
+            #Title {
+                color: black;
+                font-size: 30px;
+            }
+            #Background {
+                width: 600px;
+                height: 600px;
+
+            }
+           
+            
+        }
     </style>
     <h1><u> 2D/3D Pictures </u></h1>
     <a href="index.html" style="font-size: 40px;">Home</a>
-    <div style="text-align:center;background-color:blanchedalmond">
+    <div id="Background" style="text-align:center;background-color:blanchedalmond">
         <p id="Title">1st </p>
-        <img id="PIC" src="TKING.png" width="600" height="600" />
+        <img id="PIC" src="TKING.png" style="width: 600px; height : 600px;" />
         <br />
         <br />
         <button id="Change" onclick="NextPic();">></button>
@@ -41,76 +75,81 @@
             number++;
 
             if (number == 1) {
+                
+               
                 document.getElementById("PIC").src = "2D AND 3D images/2D PORTRAIT.png";
                 document.getElementById("PIC").style.width = 600;
-                document.getElementById("Title").innerHTML = "1st";
+                document.getElementById("Title").innerHTML = "2nd";
                 
             }
             if (number == 2) {
                 document.getElementById("PIC").src = "2D AND 3D images/3D PORTRAIT.png";
-                document.getElementById("Title").innerHTML = "2nd";
+                document.getElementById("Title").innerHTML = "3rd";
             }
             if (number == 3) {
+               
                 document.getElementById("PIC").src = "2D AND 3D images/Character side front view.png";
-                document.getElementById("PIC").style.width = 400;
-                document.getElementById("Title").innerHTML = "3rd";
+                document.getElementById("PIC").style.width = 300;
+                document.getElementById("Title").innerHTML = "4th";
                 
             }
             if (number == 4) {
                 document.getElementById("PIC").src = "2D AND 3D images/STAND FOLD ARMS 2.png";
-                document.getElementById("Title").innerHTML = "4th";
+                document.getElementById("Title").innerHTML = "5th";
             }
             if (number == 5) {
+               
                 document.getElementById("PIC").src = "2D AND 3D images/MR. H PROFILE.png";
                 document.getElementById("PIC").style.width = 600;
-                document.getElementById("Title").innerHTML = "5th";
+                document.getElementById("Title").innerHTML = "6th";
             }
             if (number == 6) {
                 document.getElementById("PIC").src = "2D AND 3D images/Mr.Kingsley 3D.png";
-                document.getElementById("Title").innerHTML = "6th";
+                document.getElementById("Title").innerHTML = "7th";
             }
             if (number == 7) {
                 document.getElementById("PIC").src = "2D AND 3D images/EDITED PHOTO.png";
-                document.getElementById("Title").innerHTML = "7th";
+                document.getElementById("Title").innerHTML = "8th";
             }
             if (number == 8) {
+               
                 document.getElementById("PIC").src = "2D AND 3D images/FRONT VIEW.png";
-                document.getElementById("PIC").style.width = 400;
-                document.getElementById("Title").innerHTML = "8th";
+                document.getElementById("PIC").style.width = 300;
+                document.getElementById("Title").innerHTML = "9th";
             }
             if (number == 9) {
                 document.getElementById("PIC").src = "2D AND 3D images/DOG FRONT VIEW SITTING looking left.png";
-                document.getElementById("Title").innerHTML = "9th";
+                document.getElementById("Title").innerHTML = "10th";
             }
             if (number == 10) {
                 document.getElementById("PIC").src = "2D AND 3D images/C1.png";
-                document.getElementById("Title").innerHTML = "10th";
-            }
-            if (number == 11) {
-                document.getElementById("PIC").src = "2D AND 3D images/CC1.png";
                 document.getElementById("Title").innerHTML = "11th";
             }
             if (number == 11) {
-                document.getElementById("PIC").src = "2D AND 3D images/W7.png";
+                document.getElementById("PIC").src = "2D AND 3D images/CC1.png";
                 document.getElementById("Title").innerHTML = "12th";
+            }
+            if (number == 11) {
+                document.getElementById("PIC").src = "2D AND 3D images/W7.png";
+                document.getElementById("Title").innerHTML = "13th";
             }
             if (number == 12) {
                 document.getElementById("PIC").src = "2D AND 3D images/FRONT VIEW ADVISOR.png";
-                document.getElementById("Title").innerHTML = "13th";
+                document.getElementById("Title").innerHTML = "14th";
             }
             if (number == 13) {
                 document.getElementById("PIC").src = "2D AND 3D images/DOG SIDE FRONT VIEW copy.png";
                 document.getElementById("PIC").style.width = 600;
-                document.getElementById("Title").innerHTML = "14th";
+                document.getElementById("Title").innerHTML = "15th";
             }
             if (number == 14) {
                 document.getElementById("PIC").src = "2D AND 3D images/Police Car.png";
-                document.getElementById("PIC").style.width = 800;
-                document.getElementById("Title").innerHTML = "15th";
+                document.getElementById("PIC").style.width = 600;
+                document.getElementById("Title").innerHTML = "16th";
             }
             if (number == 15) {
                 document.getElementById("PIC").src = "2D AND 3D images/Third Environment E4.png";
-                document.getElementById("Title").innerHTML = "16th";
+                document.getElementById("Title").innerHTML = "17th";
             }
             if (number == 16) {
                 document.getElementById("PIC").src = "TKING.png";
