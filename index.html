@@ -789,6 +789,7 @@
            firstborn.appendChild(twin1);
            firstborn.appendChild(twin2);
            parent.appendChild(firstborn);
+           parent.scrollTop = firstborn.offsetHeight + firstborn.offsetTop;
 
        }
        const inter2 = setInterval(function Wait() {
