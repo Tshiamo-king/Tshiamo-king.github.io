@@ -73,6 +73,125 @@
           margin: 0;
           font-size: 50px;
       }
+      #Outside {
+          background-color: white;
+          width: 500px;
+          height: 700px;
+          opacity: 0;
+          
+      }
+
+      #Heading {
+          background-color: black;
+          width: 500px;
+          height: 100px;
+      }
+
+      #Scrollview {
+          background-color: gray;
+          width: 500px;
+          height: 500px;
+          overflow-x: hidden;
+          overflow-y: auto;
+      }
+
+      #message {
+          background-color: black;
+          width: 500px;
+          height: 100px;
+      }
+
+      #logo {
+          padding: 10px;
+          width: 50px;
+          height: 50px;
+      }
+
+      #logo-text {
+          color: white;
+          font-size: 20px;
+          margin-top: 10px;
+      }
+
+      #logo-AI {
+          padding-top: 20px;
+          width: 20px;
+          height: 20px;
+      }
+
+      #chatbox {
+          display: inline-block;
+          background-color: black;
+          width: 200px;
+          height: 50px;
+      }
+
+      #AImessage {
+          color: white;
+          font-size: 10px;
+      }
+
+      #logo-User {
+          margin-left: 0px;
+          width: 20px;
+          height: 20px;
+      }
+
+      #chatbox-User {
+          display: inline-block;
+          background-color: black;
+          width: 200px;
+          height: 50px;
+      }
+
+      #User {
+          margin-left: 240px;
+      }
+
+      #Usermessage {
+          color: white;
+          font-size: 10px;
+      }
+
+      #user-input {
+          width: 400px;
+          height: 50px;
+          color: black;
+          margin-top: 20px;
+      }
+
+      #user-input-background {
+          display: inline-block;
+      }
+
+      #user-send-background {
+          display: inline-block;
+      }
+
+      #user-send {
+          transform: translateY(-10%);
+          width: 50px;
+          height: 50px;
+      }
+
+      #ClickBot {
+          width: 50px;
+          height: 50px;
+          margin-left: 550px;
+          transform: translateY(-250%);
+          cursor: pointer;
+      }
+      #sendmessage {
+          font-size: 50px;
+      }
+      #contact {
+          font-size: 30px;
+      }
+      #Profile {
+          width: 300px;
+          height: 300px;
+          margin-left: 600px;
+      }
       @media only screen and (max-width: 400px){
           #Change{
               font-size : 25px;
@@ -139,12 +258,132 @@
               margin: 0;
               font-size: 30px;
           }
+          #Outside {
+              background-color: white;
+              width: 500px;
+              height: 700px;
+              opacity: 0;
+             
+          }
+
+          #Heading {
+              background-color: black;
+              width: 500px;
+              height: 100px;
+          }
+
+          #Scrollview {
+              background-color: gray;
+              width: 500px;
+              height: 500px;
+              overflow-x: hidden;
+              overflow-y: auto;
+          }
+
+          #message {
+              background-color: black;
+              width: 500px;
+              height: 100px;
+          }
+
+          #logo {
+              padding: 10px;
+              width: 50px;
+              height: 50px;
+          }
+
+          #logo-text {
+              color: white;
+              font-size: 20px;
+              margin-top: 10px;
+          }
+
+          #logo-AI {
+              padding-top: 20px;
+              width: 20px;
+              height: 20px;
+          }
+
+          #chatbox {
+              display: inline-block;
+              background-color: black;
+              width: 200px;
+              height: 50px;
+          }
+
+          #AImessage {
+              color: white;
+              font-size: 10px;
+          }
+
+          #logo-User {
+              margin-left: 0px;
+              width: 20px;
+              height: 20px;
+          }
+
+          #chatbox-User {
+              display: inline-block;
+              background-color: black;
+              width: 200px;
+              height: 50px;
+          }
+
+          #User {
+              margin-left: 240px;
+          }
+
+          #Usermessage {
+              color: white;
+              font-size: 10px;
+          }
+
+          #user-input {
+              width: 400px;
+              height: 50px;
+              color: black;
+              margin-top: 20px;
+          }
+
+          #user-input-background {
+              display: inline-block;
+          }
+
+          #user-send-background {
+              display: inline-block;
+          }
+
+          #user-send {
+              transform: translateY(-10%);
+              width: 50px;
+              height: 50px;
+          }
+
+          #ClickBot {
+              width: 50px;
+              height: 50px;
+              margin-left: 150px;
+              transform: translateY(40%);
+              cursor: pointer;
+          }
+          #sendmessage{
+              font-size: 30px;
+          }
+          #contact{
+              font-size: 20px;
+          }
+          #Profile {
+              width: 300px;
+              height: 300px;
+              margin-left: 10px;
+          }
       }
      
      
   </style>
   <header>
       <nav>
+          <img id="Profile"  src="Profile picture.png" />
           <h1 id="Change">Tshiamo</h1>
           <img id="Logo" src="T.KING 2.png" />
           <div id="Color" style="text-align: center; background-color : black">
@@ -152,19 +391,19 @@
 
           </div>
           <br />
-          <h1 id ="Projects" style="color: black; text-align:center;"><u>Projects</u></h1>
+          <h1 id="Projects" style="color: black; text-align:center;"><u>Projects</u></h1>
           <div style="text-align:center">
               <a href="2D&3D Pictures.html"><h1 id="Projectnames" style="color: red; text-align: center;">2D/3D Pictures</h1></a>
               <a href="2D&3D Pictures.html"><img id="Image1" src="2D AND 3D images/2D PORTRAIT.png" /></a> <br /><br /><br />
 
               <a href="2D&3D Videos.html"><h1 id="Projectnames" style="color: red; text-align: center;">2D/3D Videos</h1></a>
-              <a href="2D&3D Videos.html"><img id="Image2" src="2D AND 3D videos/MR. H PROFILE.png"  /></a><br /><br /><br />
+              <a href="2D&3D Videos.html"><img id="Image2" src="2D AND 3D videos/MR. H PROFILE.png" /></a><br /><br /><br />
 
               <a href="Mobile 2D&3D Games & Apps.html"><h1 id="Projectnames" style="color: red; text-align: center;">Mobile Games & Applications</h1></a>
               <a href="Mobile 2D&3D Games & Apps.html"><img id="Image3" src="MY MOBILE GAMES AND APPS/the_logo.png" /></a><br /><br /><br />
 
           </div>
-          <h1 id ="Skills" style="color: black; text-align:center;"><u>Skills</u></h1>
+          <h1 id="Skills" style="color: black; text-align:center;"><u>Skills</u></h1>
           <div style="background-color: black;">
               <p id="list" style="color: red;">
                   <ul>
@@ -193,7 +432,7 @@
               </p>
 
           </div>
-          <h1 id ="Skills" style="color: black; text-align: center;">Programming Languages</h1>
+          <h1 id="Skills" style="color: black; text-align: center;">Programming Languages</h1>
           <div style="background-color: black;">
               <p id="list" style="color: red;">
                   <ul>
@@ -204,7 +443,7 @@
                   </ul>
               </p>
           </div>
-          <h1 id ="Skills" style="color: black; text-align: center;">Web Development</h1>
+          <h1 id="Skills" style="color: black; text-align: center;">Web Development</h1>
           <div style="background-color: black;">
               <p id="list" style="color: red;">
                   <ul>
@@ -215,7 +454,7 @@
                   </ul>
               </p>
           </div>
-          <h1 id ="Skills" style="color: black; text-align:center;">Database</h1>
+          <h1 id="Skills" style="color: black; text-align:center;">Database</h1>
           <div style="background-color: black;">
               <p id="list" style="color: red; ">
                   <ul>
@@ -231,10 +470,53 @@
           <br />
           <br />
           <h1 id="End" style="color: black; text-align:center; "><u>Contact Details</u></h1>
-          <div style="background-color: black;">
-              <p style="color: red; font-size: 20px;">Email: tshiamomagabe@gmail.com</p>
-              <p style="color: red; font-size: 20px;">Phone: (+27) 722 046 337</p>
+          <div style="background-color: black;height: 310px;">
+              <p id="contact" style="color: red;">Email: kingtshiamo@yahoo.com</p>
+              <p id="contact" style="color: red;">Phone: (+27) 722 046 337</p>
+              <br />
+              <p id="sendmessage" style="color: red;text-align: center">To make a call or send a message via whatsapp, click the 
+                  <img src="Mr.T.png" style="width: 30px; height: 30px;" /> icon below to reveal the assistant
+              </p>
           </div>
+          <div id="Outside">
+              <div id="Heading">
+                  <p>
+                      <span>
+                          <img id="logo" src="Mr.T.png" />
+                      </span>
+                      <span id="logo-text">
+                          Mr. T
+                      </span>
+                  </p>
+              </div>
+              <div id="Scrollview">
+                  <div id="AI">
+                      <img id="logo-AI" src="Mr.T.png" />
+                      <div id="chatbox">
+                          <p id="AImessage">
+                              Hi User, How are you?
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div id="message">
+                  <div>
+                      <div id="user-input-background">
+                          <textarea id="user-input" placeholder="Type your message here"></textarea>
+                      </div>
+                      <div id="user-send-background">
+                          <img id="user-send" onclick="Send();" src="Send ori.png" />
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div id="ClickBot" onclick="Appear();">
+              <img src="Mr.T.png" style="width: 70px; height: 70px;" />
+          </div>
+          <br />
+          <br />
+          <br />
           <hr />
           <h1 id="End" style="color: black; text-align:center; font-size: 50px;">THANK YOU</h1>
       </nav>
@@ -243,25 +525,38 @@
    <hr style="height: 100px; color: gold" />
    
    <script type="text/javascript">
-       
+       var time = 0;
+       var index3 = 0;
+       var active = false;
+       var userinput = "";
+       var uservalues = [];
+       var airesponod = "";
+       var counter = false;
+       var childrenUser = [];
+       var childrenAI = [];
+       var index4 = 0;
+       var startrefresh = false;
        var index = 0;
        var index2 = 0;
        var interval = setInterval(function changecolor() {
            index++;
            if (index == 1) {
-               document.getElementById("Color").style.backgroundColor = "black";
+               firstimage.src = "2D&3DPICTURESPAGE.png";
+               thirdimage.src = "MY MOBILE GAMES AND APPS/the_logo.png";
            }
            if (index == 2) {
-               document.getElementById("Color").style.backgroundColor = "gold";
+               //document.getElementById("Color").style.backgroundColor = "gold";
            }
            if (index == 3) {
-               document.getElementById("Color").style.backgroundColor = "silver";
+               secondimage.src = "2D&3DVIDEOSPAGE.png";
+               firstimage.src = "2D AND 3D images/2D PORTRAIT.png";
            }
            if (index == 4) {
-               document.getElementById("Color").style.backgroundColor = "lightblue";
+               //document.getElementById("Color").style.backgroundColor = "lightblue";
            }
            if (index == 5) {
-               document.getElementById("Color").style.backgroundColor = "lightyellow";
+               thirdimage.src = "MOBILE2D&3DGAMESPAGE.png";
+               secondimage.src = "2D AND 3D videos/MR. H PROFILE.png";
                index = 0;
            }
        }, 1000);
@@ -308,6 +603,233 @@
        thirdimage.addEventListener('mouseleave', function () {
            thirdimage.src = "MY MOBILE GAMES AND APPS/the_logo.png";
        });
+       function Send() {
+           active = true;
+           var input = document.getElementById("user-input");
+           const parent = document.getElementById("Scrollview");
+           const firstborn = document.createElement("div");
+           const twin1 = document.createElement("img");
+           const twin2 = document.createElement("div");
+           const twin2child = document.createElement("p");
+           firstborn.style.marginLeft = "240px";
+           twin1.src = "User.png";
+           twin1.style.width = "20px";
+           twin1.style.height = "20px";
+           twin1.style.marginLeft = "0px";
+
+           twin2.style.display = "inline-block";
+           twin2.style.width = "200px";
+           twin2.style.height = "50px";
+           twin2.style.backgroundColor = "black";
+
+           twin2child.style.color = "white";
+           twin2child.style.fontSize = "10px";
+           twin2child.innerHTML = input.value;
+           userinput = input.value;
+           childrenUser.push(firstborn);
+           document.getElementById("user-send").src = "Send new.png";
+
+           twin2.appendChild(twin2child);
+           firstborn.appendChild(twin2);
+           firstborn.appendChild(twin1);
+           parent.appendChild(firstborn);
+       }
+       const inter = setInterval(function Wait() {
+           if (active) {
+               time++;
+           }
+           if (time == 2 && active) {
+               Respond();
+               document.getElementById("user-send").src = "Send ori.png";
+               active = false;
+               time = 0;
+           }
+       }, 1000);
+       function Respond() {
+           index3++;
+           var inputtext = document.getElementById("user-input");
+           const parent = document.getElementById("Scrollview");
+           const firstborn = document.createElement("div");
+           const twin1 = document.createElement("img");
+           const twin2 = document.createElement("div");
+           const twin2child = document.createElement("p");
+           twin1.src = "Mr.T.png";
+           twin1.style.width = "20px";
+           twin1.style.height = "20px";
+           twin1.style.paddingTop = "20px";
+
+           twin2.style.display = "inline-block";
+           twin2.style.width = "200px";
+           twin2.style.height = "50px";
+           twin2.style.backgroundColor = "black";
+
+           twin2child.style.color = "white";
+           twin2child.style.fontSize = "10px";
+
+           if (index3 == 1) {
+               for (var i = 0; i < userinput.length; i++) {
+                   if (userinput[i] == "g" && userinput[i + 1] == "o" && userinput[i + 2] == "o" && userinput[i + 3] == "d") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp?";
+                       break;
+                   }
+                   if (userinput[i] == "G" && userinput[i + 1] == "o" && userinput[i + 2] == "o" && userinput[i + 3] == "d") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp?";
+                       break;
+                   }
+                   if (userinput[i] == "G" && userinput[i + 1] == "O" && userinput[i + 2] == "O" && userinput[i + 3] == "D") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp?";
+                       break;
+                   }
+                   if (userinput[i] == "g" && userinput[i + 1] == "r" && userinput[i + 2] == "e" && userinput[i + 3] == "a" && userinput[i + 4] == "t") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp";
+                       break;
+                   }
+                   if (userinput[i] == "G" && userinput[i + 1] == "r" && userinput[i + 2] == "e" && userinput[i + 3] == "a" && userinput[i + 4] == "t") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp";
+                       break;
+                   }
+                   if (userinput[i] == "G" && userinput[i + 1] == "R" && userinput[i + 2] == "E" && userinput[i + 3] == "A" && userinput[i + 4] == "T") {
+                       airesponod = "I am good thanks. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp";
+                       break;
+                   }
+                   else {
+                       airesponod = "I hope you will be good. I am Mr.T, the assistant. Do you want to make a call or send a message via whatsapp";
+                   }
+               }
+           }
+           if (index3 == 2) {
+               for (var i = 0; i < userinput.length; i++) {
+                   if (userinput[i] == "c" && userinput[i + 1] == "a" && userinput[i + 2] == "l" && userinput[i + 3] == "l") {
+                       airesponod = "Processing";
+                       window.open("tel:0105420458");
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "C" && userinput[i + 1] == "A" && userinput[i + 2] == "L" && userinput[i + 3] == "L") {
+                       airesponod = "Processing";
+                       window.open("tel:0105420458");
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "C" && userinput[i + 1] == "a" && userinput[i + 2] == "l" && userinput[i + 3] == "l") {
+                       airesponod = "Processing";
+                       window.open("tel:0105420458");
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "s" && userinput[i + 1] == "e" && userinput[i + 2] == "n" && userinput[i + 3] == "d") {
+                       airesponod = "Great. May I ask what your name is";
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "S" && userinput[i + 1] == "e" && userinput[i + 2] == "n" && userinput[i + 3] == "d") {
+                       airesponod = "Great. May I ask what your name is";
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "w" && userinput[i + 1] == "h" && userinput[i + 2] == "a" && userinput[i + 3] == "t" && userinput[i + 4] == "s" && userinput[i + 5] == "a" && userinput[i + 6] == "p" && userinput[i + 7] == "p") {
+                       airesponod = "Great. May I ask what your name is";
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "W" && userinput[i + 1] == "h" && userinput[i + 2] == "a" && userinput[i + 3] == "t" && userinput[i + 4] == "s" && userinput[i + 5] == "a" && userinput[i + 6] == "p" && userinput[i + 7] == "p") {
+                       airesponod = "Great. May I ask what your name is";
+                       index3 = 2;
+                       break;
+                   }
+                   if (userinput[i] == "m" && userinput[i + 1] == "e" && userinput[i + 2] == "s" && userinput[i + 3] == "s" && userinput[i + 4] == "a" && userinput[i + 5] == "g" && userinput[i + 6] == "e") {
+                       airesponod = "Great. May I ask what your name is";
+                       index3 = 2;
+                       break;
+                   }
+                   else {
+                       airesponod = "I don't understand. Let's try again. Do you want to make a call or send a message via whatsapp?";
+                       index3 = 1;
+                   }
+               }
+           }
+           if (index3 == 3) {
+               uservalues.push(userinput);
+               airesponod = "Good, and your Surname please?";
+           }
+           if (index3 == 4) {
+               uservalues.push(userinput);
+               airesponod = "Well Welcome " + uservalues[0] + " " + uservalues[1] + ". Please type in your email address?";
+           }
+           if (index3 == 5) {
+               for (var x = 0; x < userinput.length; x++) {
+                   if (userinput[x] == "@") {
+                       uservalues.push(userinput);
+                       airesponod = "Great. Please type the message that you would like to send to Tshiamo and click Send";
+                       index3 = 5;
+                       break;
+                   }
+                   if (x + 1 == userinput.length && userinput[x] != "@") {
+                       airesponod = "Invalid. Please type in your email address";
+                       index3 = 4;
+                   }
+
+               }
+
+
+           }
+           if (index3 == 6) {
+               uservalues.push(userinput);
+               airesponod = "Great. I have written the message for you. Your whatsapp app will open in a second. Thank you " + uservalues[0] + ". Have an amazing day";
+               startrefresh = true;
+
+           }
+
+
+           twin2child.innerHTML = airesponod;
+           inputtext.value = "";
+           childrenAI.push(firstborn);
+
+           twin2.appendChild(twin2child);
+           firstborn.appendChild(twin1);
+           firstborn.appendChild(twin2);
+           parent.appendChild(firstborn);
+
+       }
+       const inter2 = setInterval(function Wait() {
+           if (startrefresh) {
+               time++;
+           }
+           if (time == 2 && startrefresh) {
+
+               var whatsapp = "https://wa.me/0102142848?text="
+                   + "Name: " + uservalues[0] + "%0a"
+                   + "Surname: " + uservalues[1] + "%0a"
+                   + "Email: " + uservalues[2] + "%0a"
+                   + "Message: " + uservalues[3];
+
+               window.open(whatsapp, "_blank").focus();
+               startrefresh = false;
+               time = 0;
+           }
+       }, 3000);
+       function Appear() {
+           if (!counter) {
+               const chat = document.getElementById("Outside");
+               chat.style.opacity = 1;
+               counter = true;
+           }
+           else {
+               const chat = document.getElementById("Outside");
+               chat.style.opacity = 0;
+               if (startrefresh) {
+                   const parent1 = document.getElementById("Scrollview");
+                   for (var y = 0; y < childrenUser.length; y++) {
+                       parent1.removeChild(childrenUser[y]);
+                       parent1.removeChild(childrenAI[y]);
+
+                   }
+               }
+               startrefresh = false;
+               counter = false;
+           }
+
+       }
        
    </script>
 </body>

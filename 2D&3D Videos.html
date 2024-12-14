@@ -32,6 +32,19 @@
         }
         #Background {
         }
+        #right {
+            width: 60px;
+            height: 50px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #left {
+            width: 60px;
+            height: 50px;
+            cursor: pointer;
+            display: inline-block;
+        }
 
         @media only screen and (max-width: 400px){
             h1 {
@@ -59,6 +72,19 @@
                 width: 1000px;
                 height: 600px;
             }
+            #right {
+                width: 60px;
+                height: 50px;
+                
+                display: inline-block;
+            }
+
+            #left {
+                width: 60px;
+                height: 50px;
+                
+                display: inline-block;
+            }
         }
 
     </style>
@@ -68,7 +94,12 @@
         <p id="Title">1st Video</p>
         <video id="Video" src="2D AND 3D videos/2D Animation.mp4" autoplay controls></video>
         <br />
-        <button id="Change" onclick="NextVideo();">></button>
+        <div id="left">
+            <img id="Larrow" src="LeftArrow ori.png" style="width: 60px;height: 50px;" onclick="NextVideo2();" />
+        </div>
+        <div id="right">
+            <img id="Rarrow" src="RightArrow ori.png" style="width: 60px;height: 50px;" onclick="NextVideo();" />
+        </div>
     </div>
     <script type="text/javascript">
         var number = 1;
@@ -77,12 +108,6 @@
             if (number == 1) {
                
                 number = 2;
-            }
-            if (number == 10) {
-                document.getElementById("Video").src = "2D AND 3D videos/2D Animation.mp4";
-                document.getElementById("Change").style.backgroundColor = "yellow";
-                document.getElementById("Title").innerHTML = "1st Video";
-                number = 1;
             }
             if (number == 2) {
                 document.getElementById("Video").src = "2D AND 3D videos/THE FIXER-.mp4";
@@ -116,8 +141,65 @@
                 document.getElementById("Video").src = "2D AND 3D videos/THE FIXER part 5.mp4";
                 document.getElementById("Title").innerHTML = "9th Video";
             }
-            
+            if (number == 10) {
+                document.getElementById("Video").src = "2D AND 3D videos/2D Animation.mp4";
+                //document.getElementById("Change").style.backgroundColor = "yellow";
+                document.getElementById("Title").innerHTML = "1st Video";
+                number = 0;
+            }
           
+
+        }
+        function NextVideo2() {
+            number--;
+            if (number == 0) {
+
+                number = 9;
+            }
+            if (number == 1) {
+
+                number = 10;
+            }
+           
+            if (number == 2) {
+                document.getElementById("Video").src = "2D AND 3D videos/THE FIXER-.mp4";
+                document.getElementById("Title").innerHTML = "2nd Video";
+            }
+            if (number == 3) {
+                document.getElementById("Video").src = "2D AND 3D videos/3d king project.mp4";
+                document.getElementById("Title").innerHTML = "3rd Video";
+            }
+            if (number == 4) {
+                document.getElementById("Video").src = "2D AND 3D videos/THE FIXER part 2.mp4";
+                document.getElementById("Title").innerHTML = "4th Video";
+            }
+            if (number == 5) {
+                document.getElementById("Video").src = "2D AND 3D videos/3d project coffee.mp4";
+                document.getElementById("Title").innerHTML = "5th Video";
+            }
+            if (number == 6) {
+                document.getElementById("Video").src = "2D AND 3D videos/THE FIXER part 3.mp4";
+                document.getElementById("Title").innerHTML = "6th Video";
+            }
+            if (number == 7) {
+                document.getElementById("Video").src = "2D AND 3D videos/THE FIXER part 4.mp4";
+                document.getElementById("Title").innerHTML = "7th Video";
+            }
+            if (number == 8) {
+                document.getElementById("Video").src = "2D AND 3D videos/VET VIDEO FINAL COMPLETE.mp4";
+                document.getElementById("Title").innerHTML = "8th Video(Client Freelancing Video)";
+            }
+            if (number == 9) {
+                document.getElementById("Video").src = "2D AND 3D videos/THE FIXER part 5.mp4";
+                document.getElementById("Title").innerHTML = "9th Video";
+            }
+            if (number == 10) {
+                document.getElementById("Video").src = "2D AND 3D videos/2D Animation.mp4";
+                //document.getElementById("Change").style.backgroundColor = "yellow";
+                document.getElementById("Title").innerHTML = "1st Video";
+
+            }
+
 
         }
     </script>
